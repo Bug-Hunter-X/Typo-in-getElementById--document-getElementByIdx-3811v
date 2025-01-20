@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to access the innerHTML property of a div with an ID
+    document.getElementByIdx("myDiv").innerHTML = "<b>This text is bold!</b>";
+  </script>
+</body>
+</html>
